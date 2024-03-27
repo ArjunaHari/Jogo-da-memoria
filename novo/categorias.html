@@ -1,0 +1,68 @@
+<div id="categorias">
+	
+	<div id="categoria">
+		<h1 class="cat">CATEGORIAS</h1>
+	</div>
+	
+	
+	<p class="cat">Escolha qual categoria deseja jogar:</p>
+	<div id="grid-container-1">
+		<button class="box box-1">ANIMAIS</button>
+		<button id="bh1" class="box box-1"></button>
+		<button class="box box-2">TRANSPORTES</button>
+		<button id="bh2" class="box box-2"></button>
+		<button class="box box-3">OBJETOS</button>
+		<button id="bh3" class="box box-3"></button>
+		<button class="box box-4">COMIDAS</button>
+		<button id="bh4" class="box box-4"></button>
+		<button class="box box-5">PROFISSÕES</button>
+		<button id="bh5" class="box box-5"></button>
+		<button class="box box-6">EMOJIS</button>
+		<button id="bh6" class="box box-6"></button>
+	</div>
+
+	<script>
+		$(document).ready(function () {
+			$(".box-1").click(function () {
+				$("#main").load("animais.html", function () {
+					document.dispatchEvent(new Event("reload"));
+				});
+			});
+		});
+		$(document).ready(function () {
+			$(".box-2").click(function () {
+				$("#main").load("transportes.html", function () {
+					document.dispatchEvent(new Event("reload"));
+				});
+			});
+		});
+		$(document).ready(function () {
+			$(".box-3").click(function () {
+				$("#main").load("objetos.html", function () {
+					document.dispatchEvent(new Event("reload"));
+				});
+			});
+		});
+		$(document).ready(function () {
+			$(".box-4").click(function () {
+				$("#main").load("comidas.html", function () {
+					document.dispatchEvent(new Event("reload"));
+				});
+			});
+		});
+		$(document).ready(function () {
+			$(".box-5").click(function () {
+				$("#main").load("proficoes.html", function () {
+					document.dispatchEvent(new Event("reload"));
+				});
+			});
+		});
+		$(document).ready(function () {
+			$(".box-6").click(function () {
+				$("#main").load("emojis.html", function () {
+					document.dispatchEvent(new Event("reload"));
+				});
+			});
+		});
+	</script>
+</div>
